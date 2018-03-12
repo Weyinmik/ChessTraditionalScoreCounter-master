@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="text_size_small">20sp</dimen>
+    <dimen name="text_size_big">56sp</dimen>
+    <dimen name="layout_margin_left_right">24dp</dimen>
+    <dimen name="layout_margin_top_smallest">8dp</dimen>
+    <dimen name="layout_margin_top_small">16dp</dimen>
+    <dimen name="layout_margin_top_medium">32dp</dimen>
+    <dimen name="layout_margin_top_big">50dp</dimen>
+    <dimen name="layout_margin_top_biggest">68dp</dimen>
+    <dimen name="layout_margin_bottom">160dp</dimen>
+    <dimen name="padding">4dp</dimen>
+    <dimen name="layout_weight_second_linear">6</dimen>
+    <dimen name="layout_weight_third_linear">1</dimen>
+    <dimen name="layout_height_width_linear">0dp</dimen>
+    <dimen name="layout_width_view">1dp</dimen>
+
+</resources>

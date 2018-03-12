@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Chess Traditional Score Counter</string>
+    <string name="team_one">WHITE</string>
+    <string name="team_two">BLACK</string>
+    <string name="score_team_white">0.0</string>
+    <string name="score_team_black">0.0</string>
+   <string name="plus_one_win">+1 Win</string>
+    <string name="plus_half_draw">+1/2 Draw</string>
+    <string name="plus_zero_loss">+0 L0ss</string>
+    <string name="text_button">Reset</string>
+    <string name="font_family_score">sans-serif light</string>
+    <string name="font_family_name">sans-serif light</string>
 </resources>

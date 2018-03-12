@@ -11,14 +11,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="6"
+            android:layout_height="@dimen/layout_height_width_linear"
+            android:layout_weight="@dimen/layout_weight_second_linear"
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="@dimen/layout_height_width_linear"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="@dimen/layout_weight_third_linear"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
@@ -26,11 +26,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/layout_margin_top_big"
-                    android:fontFamily="sans-serif-medium"
-                    android:padding="4dp"
-                    android:text="White"
+                    android:fontFamily="@string/font_family_name"
+                    android:padding="@dimen/padding"
+                    android:text="@string/team_one"
                     android:textAllCaps="true"
-                    android:textColor="#616161"
+                    android:textColor="@color/team_name"
                     android:textSize="@dimen/text_size_small" />
 
                 <TextView
@@ -38,11 +38,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/layout_margin_top_small"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@string/font_family_score"
                     android:gravity="center_horizontal"
-                    android:padding="4dp"
-                    android:text="0"
-                    android:textColor="#000000"
+                    android:padding="@dimen/padding"
+                    android:text="@string/score_team_white"
+                    android:textColor="@color/team_score"
                     android:textSize="@dimen/text_size_big" />
 
                 <Button
@@ -52,7 +52,7 @@
                     android:layout_marginRight="@dimen/layout_margin_left_right"
                     android:layout_marginTop="@dimen/layout_margin_left_right"
                     android:onClick="submitWinWhite"
-                    android:text="+1 Win" />
+                    android:text="@string/plus_one_win" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -61,7 +61,7 @@
                     android:layout_marginRight="@dimen/layout_margin_left_right"
                     android:layout_marginTop="@dimen/layout_margin_top_smallest"
                     android:onClick="submitDrawWhite"
-                    android:text="+1/2 Draw" />
+                    android:text="@string/plus_half_draw" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -70,21 +70,21 @@
                     android:layout_marginRight="@dimen/layout_margin_left_right"
                     android:layout_marginTop="@dimen/layout_margin_top_smallest"
                     android:onClick="submitLossWhite"
-                    android:text="+0 L0ss" />
+                    android:text="@string/plus_zero_loss" />
 
             </LinearLayout>
 
             <View
-                android:layout_width="1dp"
+                android:layout_width="@dimen/layout_width_view"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="160dp"
+                android:layout_marginBottom="@dimen/layout_margin_bottom"
                 android:layout_marginTop="@dimen/layout_margin_top_biggest"
                 android:background="@android:color/darker_gray" />
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="@dimen/layout_height_width_linear"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="@dimen/layout_weight_third_linear"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
@@ -92,11 +92,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/layout_margin_top_big"
-                    android:fontFamily="sans-serif-medium"
-                    android:padding="4dp"
-                    android:text="Black"
+                    android:fontFamily="@string/font_family_name"
+                    android:padding="@dimen/padding"
+                    android:text="@string/team_two"
                     android:textAllCaps="true"
-                    android:textColor="#616161"
+                    android:textColor="@color/team_name"
                     android:textSize="@dimen/text_size_small" />
 
                 <TextView
@@ -104,11 +104,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/layout_margin_top_small"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@string/font_family_score"
                     android:gravity="center_horizontal"
-                    android:padding="4dp"
-                    android:text="0"
-                    android:textColor="#000000"
+                    android:padding="@dimen/padding"
+                    android:text="@string/score_team_black"
+                    android:textColor="@color/team_score"
                     android:textSize="@dimen/text_size_big" />
 
                 <Button
@@ -118,7 +118,7 @@
                     android:layout_marginRight="@dimen/layout_margin_left_right"
                     android:layout_marginTop="@dimen/layout_margin_left_right"
                     android:onClick="submitWinBlack"
-                    android:text="+1 Win" />
+                    android:text="@string/plus_one_win" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -127,7 +127,7 @@
                     android:layout_marginRight="@dimen/layout_margin_left_right"
                     android:layout_marginTop="@dimen/layout_margin_top_smallest"
                     android:onClick="submitDrawBlack"
-                    android:text="+1/2 Draw" />
+                    android:text="@string/plus_half_draw" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -136,7 +136,7 @@
                     android:layout_marginRight="@dimen/layout_margin_left_right"
                     android:layout_marginTop="@dimen/layout_margin_top_smallest"
                     android:onClick="submitLossBlack"
-                    android:text="+0 L0ss" />
+                    android:text="@string/plus_zero_loss" />
 
             </LinearLayout>
 
@@ -150,7 +150,7 @@
             android:layout_marginTop="@dimen/layout_margin_top_medium"
             android:gravity="center"
             android:onClick="resetScore"
-            android:text="Reset" />
+            android:text="@string/text_button" />
 
     </LinearLayout>
 </ScrollView>
