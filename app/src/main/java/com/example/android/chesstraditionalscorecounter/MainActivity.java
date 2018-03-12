@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
             scoreWhite = savedInstanceState.getDouble ( "scoreWhite" );
             scoreBlack = savedInstanceState.getDouble ( "scoreBlack" );
 
-
         }
     }
 
