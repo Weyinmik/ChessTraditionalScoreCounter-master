@@ -14,17 +14,34 @@ public class MainActivity extends AppCompatActivity {
      */
     double scoreWhite = 0;
     double scoreBlack = 0;
+    TextView whiteScoreView;
+    TextView blackScoreView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate ( savedInstanceState );
         setContentView ( R.layout.activity_main );
+        whiteScoreView = (TextView) findViewById( R.id.white_score );
+        blackScoreView = (TextView) findViewById( R.id.black_score );
+    }
+
+    /**
+     * Displays the given score for Team White.
+     */
+    public void displayForWhite(double score) {
+        whiteScoreView.setText ( String.valueOf ( score ));
+    }
+
+    /**
+     * Displays the given score for Team Black.
+     */
+    public void displayForBlack(double score) {
+        blackScoreView.setText ( String.valueOf ( score ));
     }
 
     /**
      * Helpful for screen rotation, ensures that data is saved when screen rotates horizontally and vertically
      */
-
     @Override
     protected void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState ( savedInstanceState );
@@ -112,23 +129,4 @@ public class MainActivity extends AppCompatActivity {
         displayForWhite ( scoreWhite );
         displayForBlack ( scoreBlack );
     }
-
-
-    /**
-     * Displays the given score for Team White.
-     */
-    public void displayForWhite(double score) {
-        TextView scoreView = (TextView) findViewById ( R.id.white_score );
-        scoreView.setText ( String.valueOf ( score ) );
-    }
-
-    /**
-     * Displays the given score for Team Black.
-     */
-    public void displayForBlack(double score) {
-        TextView scoreView = (TextView) findViewById ( R.id.black_score );
-        scoreView.setText ( String.valueOf ( score ) );
-    }
 }
-
-
